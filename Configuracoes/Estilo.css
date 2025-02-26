@@ -55,7 +55,7 @@ body {
 }
 
 .campo {
-
+ overflow: visible;
     margin: 20px;
     margin-left: 10%;
     background-color: rgb(255, 255, 255);
@@ -143,10 +143,13 @@ body {
 }
 
 .skills img{
-    object-fit: fill;
+
+    object-fit: cover;
     width: 5vw;   
-    height: auto;
-  border-radius: 10px;
+    height: 10vh;
+     border-radius: 10px;
+     margin-left: 30px;
+
 }
 .skills img:hover{
         border: 2px solid rgb(31, 71, 121);
@@ -155,22 +158,12 @@ body {
         transition: 0.8s ease-in-out;
   
 }
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre imagens */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-    padding: 20px;
-    
 
-}
 
 .skills h1{
     display: flex;
     justify-content: left;
-    margin-top: 20px;
+    margin-bottom: 20px;
    
     text-align: left;
 
@@ -186,6 +179,8 @@ body {
 .contacto a{
     color: rgb(31, 71, 121);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -193,7 +188,7 @@ body {
     .campo {
         width: 100vw;
         margin-left: 0;
-        height: 50vh;
+        height: auto;
 
     }
 
@@ -252,5 +247,9 @@ body {
     margin-bottom: 80px;
     text-align: center;
 }
-
-
+.Ap a{
+    margin-top: -20px;
+}
+.Ap {
+    border-bottom:20px solid white;
+}
