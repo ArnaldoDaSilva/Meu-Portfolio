@@ -233,8 +233,8 @@ body {
     .skills img{
         
         object-fit: fill;
-        width: 5dvw;   
-        height: 10vh;
+        width: 10vw;   
+        height: 5vh;
          border-radius: 10px;
 
     }
