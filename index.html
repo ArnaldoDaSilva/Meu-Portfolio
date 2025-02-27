@@ -187,8 +187,8 @@
                     </div>
                 </div>
 
-                <button "><a href=" Configuracoes\portifolio.html"> Ver Tudo<i class="fas fa-arrow-right"></i>
-                    </a></button>
+                <button onclick="myFunction()">ver tudo<i class="fas fa-arrow-right"></i>
+                    </button>
 
 
             </div>
@@ -245,7 +245,12 @@
                 }
             });
         });
-
+        function myFunction() {
+            localStorage.setItem("Click", "true");
+         setTimeout(()=>{
+            window.location.href="Configuracoes/portifolio.html";
+        1000 });
+        }
 
     </script>
 </body>
