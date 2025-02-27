@@ -246,7 +246,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
     }
 
@@ -261,7 +261,7 @@ body {
         margin: 10px 0;
     }
     .nav-links a {
-
+        padding: 6px 20px;
         color: rgb(44, 44, 44);
     ;
     
@@ -344,6 +344,7 @@ body {
 .portfolio h2{
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 .campo #portfolio{
     background: #ffffff;
