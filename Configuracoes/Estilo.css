@@ -272,18 +272,17 @@ body {
         margin-top: 0;
     }
     .icon1{
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
     }
 
     .icon2 img {
         height: 30vh;
         width: auto;
      
-        object-fit: cover;
-        object-position: center;
+   
         margin-right: 10vw;
         border-radius: 50px;
-        margin-top: 6vh;
+
     }
 
     .skills img{
