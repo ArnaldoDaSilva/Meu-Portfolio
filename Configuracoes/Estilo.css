@@ -56,7 +56,7 @@ body {
 
 .campo {
  overflow: visible;
-    margin: 20px;
+    margin: 10px;
     margin-left: 10%;
     background-color: rgb(255, 255, 255);
     height: 220px;
@@ -105,9 +105,7 @@ body {
     color: rgb(153, 0, 255);
 
 }
-.campo::before{
-    opacity: 200px ;
-}
+
 
 .icon1 a{
 
@@ -121,7 +119,15 @@ body {
     transition: 0.5s ease-in-out;
 
 
+
 }
+.campo::before {
+   
+    opacity: calc(25%);
+
+
+}
+
 
 .icon2 {
     display: flex;
@@ -156,6 +162,7 @@ body {
         border-radius: 10px;
         transform: scale(1.3);
         transition: 0.8s ease-in-out;
+      
   
 }
 
@@ -182,20 +189,60 @@ body {
     display: flex;
     justify-content: center;
 }
+@media screen   and (max-width: 400px ) {
+    .icon2 img {
+        height: 150px;
+        width: auto;
+     
+        object-fit: fill;
+        object-position: top;
 
-
-@media (max-width: 768px) {
-    .campo {
-        width: 100vw;
-        margin-left: 0;
-        height: auto;
-        justify-content: space-between;
+        border-radius: 50px;
+        margin-top: 6vh;
     }
+  
+}
+@media  (width: 992px){
 
+}
+@media  (max-width: 992px) {
+    body{
+        background-color: #ffffff;
+        
+   
+    }
+    .projetos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .campo {
+        width: 100dvw;
+        height: auto;
+        justify-content: space-around;
+        margin: 0px;
+        border: none;
+        gap: 20px;
+        color: rgb(44, 44, 44);
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+
+    }
+    .Ap{
+        height: fit-content;
+    }
+    .campo button{
+        margin-top: 0;
+        height: auto;
+    }
     .navbar {
         width: 100%;
         margin-left: 0;
-        height: 8vh;
+        height: 4vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -207,35 +254,45 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        
     }
 
     .nav-links li {
         margin: 10px 0;
     }
+    .nav-links a {
+
+        color: rgb(44, 44, 44);
+    ;
+    
+    
+    }
 
     .Ap button {
         margin-top: 0;
     }
+    .icon1{
+        margin-bottom: 20vh;
+    }
 
     .icon2 img {
-        height: 150px;
-        width: 200px;
-        display: flex;
-        align-items: center;
-
+        height: 30vh;
+        width: auto;
+     
         object-fit: cover;
-        object-position: top;
-
-        clip-path: circle(50%);
+        object-position: center;
+        margin-right: 10vw;
+        border-radius: 50px;
         margin-top: 6vh;
     }
 
     .skills img{
         
         object-fit: cover;
-        width: 10vw;   
+        width: 5vw;   
         height: 5vh;
          border-radius: 10px;
+         background-color: lightslategray;
 
     }
 
@@ -250,6 +307,10 @@ body {
       font-size:larger;
     }
 
+    i{
+        color: rgb(44, 44, 44);
+    }
+
 }
 .Ap h1 {
     margin-bottom: 80px;
@@ -260,4 +321,100 @@ body {
 }
 .Ap {
     border-bottom:20px solid white;
+}
+.Sobre{
+    font-family: 'Segoe UI';
+    text-align: justify;
+}
+.portfolio a{
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.portfolio button {
+    
+   
+    border-radius: 10px;
+    padding: 10px;
+    background:  #ffffff;
+    margin-left: 70vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio h2{
+    display: flex;
+    justify-content: center;
+}
+.campo #portfolio{
+    background: #ffffff;
+    display: flex ;
+    flex-direction: column;
+    height: auto;
+    
+    
+    justify-content: center;
+}
+
+
+/* Container dos Projetos */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    flex-direction: row;
+}
+
+/* Estilizando cada Projeto */
+.projeto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do Projeto */
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Links para GitHub e Live Demo */
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.links a i {
+    margin-right: 5px;
+}
+
+/* Estilo para botões */
+.links a:first-child {
+    background-color: #333; /* GitHub */
+}
+
+.links a:last-child {
+    background-color: rgb(31, 71, 121); /* Live Demo */
+}
+
+.links a:hover {
+    opacity: 0.8;
 }
