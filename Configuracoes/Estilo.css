@@ -388,7 +388,7 @@ p{
         }
         .Ap .icon2 {
           position: absolute;
-          top: 10%;
+          top: 50%;
           right: 10vw;
           width: 14%;
           height: auto;
@@ -437,7 +437,7 @@ p{
         }
         
         .nav-links a:hover {
-            border: 1px solid #ff0000 ;
+            border: none ;
             border-radius: 10px;
             background-color: transparent;
             text-shadow:  0 2px 8px rgba(255, 255, 255, 0.514);
