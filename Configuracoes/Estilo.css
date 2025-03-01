@@ -334,6 +334,8 @@ p{
 }
 
 
+    
+
 @media  (max-width: 992px) {
         body{
             background-color: #ffffff;
@@ -343,11 +345,11 @@ p{
         }
         .navbar{
             background: white;
-            width: 80vw;
+            width: 100%;
+            margin: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             
         }
         .campo{
@@ -366,7 +368,7 @@ p{
             color: #333;
         }
         .Ap{
-            height: fit-content;
+            
             position: relative;
         }
         
@@ -425,11 +427,13 @@ p{
             background: none;
         }
         .Sobre .icon2 img{
-
+            height: auto;
             background:linear-gradient(to bottom left ,  rgb(255, 255, 255) 50%,rgba(255, 0, 0, 0.445) );
         }
-        .skills{
-
+        .skills img{
+         aspect-ratio: 1/1;
+            height: auto;
+            width: 8vw;
         }
         .contacto a {
             color: #333;
@@ -439,7 +443,13 @@ p{
             justify-content: center;
             flex-direction: column;
         }
-        .portfolio{
-
+        .projeto {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
 }
