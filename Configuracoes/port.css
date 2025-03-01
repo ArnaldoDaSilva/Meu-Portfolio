@@ -79,3 +79,17 @@ h2 {
 .links a:hover {
     opacity: 0.8;
 }
+
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Outras variáveis de cor */
+  }
+  
+  .dark-mode {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    /* Outras variáveis de cor para o modo escuro */
+  }
+  

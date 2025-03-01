@@ -16,27 +16,24 @@
     <!-- minha navbar -->
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="#" class="navbar-link" data-target="Ap"> <i class="fas fa-home"></i></a></li>
-            <li><a href="#" class="navbar-link" data-target="Sobre"><i class="fas fa-user"></i>
-                </a></li>
-            <li><a href="#" class="navbar-link" data-target="skills"><i class="fas fa-lightbulb"></i>
-                    </i>
-                </a></li>
-            <li><a href="#" class="navbar-link" data-target="contacto"><i class="fas fa-phone"></i>
-                </a></li>
-            <li><a href="# " class="navbar-link" data-target="portfolio"><i class="fas fa-briefcase"></i>
+            <li><a href="#" class="navbar-link" data-target="Ap"> <i class="fas fa-home"> </i> home</a></li>
+            <li><a href="#" class="navbar-link" data-target="Sobre"> <i class="fas fa-user"> </i> sobre </a></li>
+            <li><a href="#" class="navbar-link" data-target="skills"><i class="fas fa-lightbulb"> </i> skills </a></li>
+            <li><a href="#" class="navbar-link" data-target="contacto"><i class="fas fa-phone"></i> contacto </a></li>
+            <li><a href="# " class="navbar-link" data-target="portfolio"><i class="fas fa-briefcase"></i> portfolio
                 </a></li>
 
         </ul>
     </nav>
     <!-- campos de Apresentacao  -->
-    <div class="campo">
+    <!-- <div class="campo"> -->
         <div class="Ap" id="Ap">
-            <pre>Ola, sou o Arnaldo Augusto Da Silva </pre>
+            <pre>Arnaldo Augusto Da Silva </pre>
             <p></p>
-            <h1>Desenvolvedor De Software</h1>
+            <h1>Desenvolvedor De Software </i></h1>
 
             <Button onclick="window.location.href='tel:+258860162805'">Contacte me </Button>
+           
             <div class="icon1">
 
                 <a href="https://www.linkedin.com/in/arnaldo-silva-869941316/ "><i class="fab fa-linkedin"></i>
@@ -47,13 +44,14 @@
                     Github
                 </a>
             </div>
+            
+
+            <p><i class="fab fa-dev"></i></p>
             <div class="icon2">
-                <img src="Imagens\eu.jpg" alt="">
+                <img src="logo\2.png" alt="">
             </div>
-
-
         </div>
-    </div>
+    <!-- </div> -->
     <!-- campo 1
 
       -->
@@ -71,6 +69,9 @@
                 oportunidades para aplicar meu conhecimento em projetos
                 desafiadores e contribuir para o sucesso da equipe e da
                 organização.</p>
+            <div class="icon2">
+                <img src="logo\4.png" alt="">
+            </div>
         </div>
     </div>
     <!-- campo 2    -->
@@ -80,9 +81,10 @@
             <h1>Skills</h1>
             <p></p>
             <img src="Imagens\html.jpg" alt="HTML"
-                title="html é uma linguagem de marcação usada para criar páginas web">
+                title="html é uma linguagem de marcação usada para criar páginas web" >
             <img src="Imagens\Css.jpg" alt="Css"
                 title=" CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML">
+                
             <img src="Imagens\js.jpg" alt="JavaScript"
                 title=" JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web">
             <img src="Imagens\php.jpg" alt="PhP"
@@ -106,12 +108,12 @@
         <div class="contacto" id="contacto">
             <h1>Contactos</h1>
             <p></p>
-            <a href="mailto:as3904844@gmail.com"><i class="fas fa-envelope"> </i>
-                Enviar um E-mail</a><br>
-            <a href="tel:+258860162805"> <i class="fas fa-phone-alt"></i>
-                Ligar para Contato</a><br>
-            <a href="https://wa.me/860162805" target=""><i class="fab fa-whatsapp"></i>
-                Conversar no WhatsApp</a><br>
+            <a href="mailto:as3904844@gmail.com"><i class="fas fa-envelope"></i>Enviar um E-mail</a><br>
+
+            <a href="tel:+258860162805"> <i class="fas fa-phone-alt"></i> Ligar para Contato</a><br>
+
+            <a href="https://wa.me/860162805" target=""><i class="fab fa-whatsapp"></i> Conversar no WhatsApp</a><br>
+
             <!-- <a href="https://www.facebook.com/ArnaldoDaSilva" target="Arnaldo Silva"> <i class="fab fa-facebook"></i>
                 </i>Visitar
                 meu Facebook</a><br> -->
@@ -188,7 +190,7 @@
                 </div>
 
                 <button onclick="myFunction()">ver tudo<i class="fas fa-arrow-right"></i>
-                    </button>
+                </button>
 
 
             </div>
@@ -247,9 +249,10 @@
         });
         function myFunction() {
             localStorage.setItem("Click", "true");
-         setTimeout(()=>{
-            window.location.href="Configuracoes/portifolio.html";
-        1000 });
+            setTimeout(() => {
+                window.location.href = "Configuracoes/portifolio.html";
+                1000
+            });
         }
 
     </script>
