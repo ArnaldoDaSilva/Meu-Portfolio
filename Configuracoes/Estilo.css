@@ -193,7 +193,7 @@ p{
 }
 .skills img{
 
-    object-fit: cover;
+    object-fit: fill;
     width: 5vw;
     height: 10vh;
     border-radius: 10px;
