@@ -359,6 +359,7 @@ p{
             margin: 0;
             display: flex;
             justify-content: center;
+            
             padding: 10px 10px;
         }
         .campo{
@@ -387,17 +388,17 @@ p{
             color: #333;
         }
         .Ap .icon2 {
-            display: flex;
-       position: absolute;
-          top: 50%;
-          right: 10vw;
-          width: 14%;
-          height: auto;
+      
         }
         .Ap .icon2 img{
             background:linear-gradient(to bottom right , transparent 30%,rgba(255, 0, 0, 0.445) );
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 40%;
+            position: absolute;
+            top: 50%;
+            right: 10vw;
+            width: 14%;
+            height: auto;
         }
         .icon1 a{
             color: #333;
