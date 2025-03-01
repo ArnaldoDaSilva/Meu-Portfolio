@@ -387,7 +387,8 @@ p{
             color: #333;
         }
         .Ap .icon2 {
-          position: absolute;
+            display: flex;
+       position: absolute;
           top: 50%;
           right: 10vw;
           width: 14%;
@@ -416,25 +417,19 @@ p{
         }
         
         .nav-links li {
-            margin: 0 15px;
+            margin: 10px 0px;
         }
         
         .nav-links a  {
             text-decoration: none;
             color: rgb(255, 0, 0);
             font-size: 14px;
-            padding: 8px 20px;
+            padding: 6px 20px;
+            font-style: italic;
         
         
         }
-        .nav-links i  {
-            text-decoration: none;
-            color: rgb(255, 0, 0);
-            font-size: 14px;
-            padding: 0px;
-        
-        
-        }
+  
         
         .nav-links a:hover {
             border: none ;
