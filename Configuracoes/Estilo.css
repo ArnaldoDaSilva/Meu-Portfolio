@@ -341,13 +341,14 @@ p{
             background-color: #ffffff;
             color: darkgray;
             display: flex;
+
             
       
         }
         .projetos-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: left;
+            justify-content: center;
             gap: 20px;
             flex-direction: column;
         }
@@ -471,5 +472,7 @@ p{
             width: 300px;
             text-align: center;
             transition: transform 0.3s ease;
+            justify-content: center ;
         }
+        
 }
