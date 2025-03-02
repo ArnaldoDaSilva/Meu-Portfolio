@@ -175,7 +175,7 @@ p{
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
     margin-top: -25%;
-    position: static;
+   
 }
 
 .Sobre .icon2 {
@@ -342,8 +342,7 @@ p{
 
 .links a:hover {
     opacity: 0.8;
-}   .Sobre h4{
-     
+ 
 }
 
     
