@@ -20,8 +20,8 @@ body {
 }
 
 .navbar {
-    background:linear-gradient(to right, rgb(15, 16, 27) 50%,rgba(255, 0, 0, 0.565) 100%);
-    padding: 10px 0px;
+    background:linear-gradient(to right, rgb(29, 31, 52) 50%,rgba(255, 0, 0, 0.565) 100%);
+    padding: 10px 0;
     width: 80vw;
     margin-left: 10%;
     margin-top: 10px;
@@ -66,11 +66,12 @@ body {
     width: 80%;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+   
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-    background:linear-gradient(to right, rgb(15, 16, 27) 60%,rgba(255, 0, 0, 0.18) 100%);
+    background:linear-gradient(to right, rgb(29, 31, 52) 60%,rgba(255, 0, 0, 0.18) 100%);
 }
 .Ap{
-    overflow: visible;
+    overflow: hidden;
     margin: 10px;
     margin-left: 10%;
     height: fit-content;
@@ -79,11 +80,16 @@ body {
     color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
     padding: 20px;
+    background: rgb(29, 31, 52);
     
-}
+}  
+
 i{
     color:  rgb(255, 0, 0);
+  
+    
 }
+
 p{
     color: darkgray;
 }
@@ -95,7 +101,6 @@ p{
     display: flex;
     justify-content: left;
 
-    text-shadow:  0 2px 8px rgba(255, 255, 255, 0.2);
 
 }
 .campo {
@@ -112,8 +117,8 @@ p{
     height: 40px;
     border-radius: 10px;
     color: darkgray;
-    margin-top: -200px;
-    padding: 15px 10px;
+    
+    padding:  10px;
     border: 1px solid rgb(255, 0, 0);
     background:linear-gradient(to right, rgb(15, 16, 27) ,rgb(255, 0, 0));
 
@@ -139,6 +144,7 @@ p{
 
     color: rgb(255, 255, 255);
     text-decoration: none;
+    
 
 }
 
@@ -151,25 +157,27 @@ p{
 
 
 .Ap .icon2 {
-    
-  margin-top: -20vh;
-  margin-left: 80%;
-    width: 10%;
-    height: auto;
-    border-top-right-radius: 60%;
-    border-top-left-radius: 60%;
+    width: auto;
+    height: fit-content;
+
+
    
 }
 
 .Ap .icon2 img {
-    height: auto;
-    width: 100%;
+    height:  30dvh;
+    width: 10vw;
+    aspect-ratio: 39/29;
     object-position: center;
-    background-clip: content-box;
-    mix-blend-mode:normal;
-    background:linear-gradient(to bottom right , transparent 50%,rgba(255, 0, 0, 0.445) );
-    
-    
+    object-fit: fill;
+    float: right;
+    margin: 0 10px 10px 0;
+    mix-blend-mode: normal;
+    background:linear-gradient(to bottom right ,  transparent 50%,rgba(255, 0, 0, 0.445) );
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    margin-top: -25%;
+    position: static;
 }
 
 .Sobre .icon2 {
@@ -185,10 +193,13 @@ p{
     width: 20vw;
     object-position: top;
     object-fit: cover;
+    float: left;
+    margin: 0 10px 10px 0;
     mix-blend-mode: normal;
-    background:linear-gradient(to bottom left ,  rgb(15, 16, 27) 50%,rgba(255, 0, 0, 0.445) );
+    background:linear-gradient(to bottom left ,  transparent 50%,rgba(255, 0, 0, 0.445) );
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    overflow: hidden;
 
 }
 .skills img{
@@ -198,13 +209,14 @@ p{
     height: 10vh;
     border-radius: 10px;
     margin-left: 30px;
-
+    gap: 10px;
+    
 }
 .skills img:hover{
-        border: 2px solid rgb(31, 71, 121);
+        border: 1px solid rgb(31, 71, 121);
         border-radius: 10px;
-        transform: scale(1.3);
-        transition: 0.8s ease-in-out;
+        transform: translateY(-5px);
+        transition: 0.5s ease-in-out;
 
 
 }
@@ -331,6 +343,8 @@ p{
 
 .links a:hover {
     opacity: 0.8;
+}   .Sobre h4{
+     
 }
 
 
@@ -344,6 +358,14 @@ p{
 
             
       
+        }
+        .navbar  a{
+            float: right;
+          
+        }
+        .navbar i{
+            float: left;
+            
         }
         .projetos-container {
             display: flex;
@@ -380,24 +402,29 @@ p{
             color: #333;
         }
         .Ap{
-            
-            position: relative;
+            background: white;
         }
         
         .Ap h1{
             color: #333;
         }
         .Ap .icon2 {
-         position: absolute;
-          top: 80%;
-          right: 10vw;
-          width: 14%;
-          height: auto;
+            flex-basis: auto;
+         
         }
         .Ap .icon2 img{
             background:linear-gradient(to bottom right , transparent 30%,rgba(255, 0, 0, 0.445) );
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 40%;
+     
+            float: right;
+            margin: 0 auto;
+            display: block;
+            height: 10vh;
+            width: 20vw;
+            aspect-ratio: 3/2;
+        
+            margin: -25% 5% 10pX;
+      
+    
         }
         .icon1 a{
             color: #333;
@@ -417,7 +444,7 @@ p{
         }
         
         .nav-links li {
-            margin: 10px 0px;
+            margin: 10px;
         }
         
         .nav-links a  {
@@ -426,7 +453,7 @@ p{
             font-size: 14px;
             padding: 6px 20px;
             font-style: italic;
-        
+            
         
         }
   
@@ -441,9 +468,11 @@ p{
             background: none;
         }
         .Sobre .icon2 img{
-            height: auto;
+            height: 30vh;
+            width: 20vw;
             background:linear-gradient(to bottom left ,  rgb(255, 255, 255) 50%,rgba(255, 0, 0, 0.445) );
         }
+        
         .skills img{
          aspect-ratio: 1/1;
             height: auto;
