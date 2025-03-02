@@ -359,14 +359,7 @@ p{
             
       
         }
-        .navbar  a{
-            float: right;
-          
-        }
-        .navbar i{
-            float: left;
-            
-        }
+  
         .projetos-container {
             display: flex;
             flex-wrap: wrap;
