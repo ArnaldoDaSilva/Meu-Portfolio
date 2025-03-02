@@ -286,7 +286,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    flex-direction: row;
+   
 }
 
 /* Estilizando cada Projeto */
@@ -362,8 +362,9 @@ p{
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            flex-direction: column;
+         
         }
+  
         
         .navbar{
             background: white;
