@@ -11,7 +11,7 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: rgb(10, 11, 23);
+    background-color: rgb(9, 24, 54);
     display: flex;
     flex-wrap: wrap;
     color: rgb(255, 255, 255);
@@ -152,14 +152,32 @@ p{
 
 }
 
+ .imga {
+    height: 30vh;
+    width: 10vw;
+    object-position: right;
+    object-fit: fill;
+    float: right;
+    margin: 0 20dvh 10px 0;
+    mix-blend-mode: normal;
 
+    border-radius: 50%;
+    top: -10%;
+ 
 
-.Ap .icon2 {
+    /* object-fit: fill;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 10px;
+    margin-left: 30px;
+    gap: 10px; */
+}
+
+ .icon2 img{
     width: auto;
-    height: fit-content;
+    height: fit-content; 
 
 
-   
 }
 
 .Ap .icon2 img {
@@ -171,12 +189,13 @@ p{
     float: right;
     margin: 0 10px 10px 0;
     mix-blend-mode: normal;
-    background:linear-gradient(to bottom right ,  transparent 50%,rgba(255, 0, 0, 0.445) );
-    border-bottom-right-radius: 20%;
-    border-top-right-radius: 20%;
+    background:linear-gradient(to bottom right ,  transparent 45%,rgba(255, 0, 0, 0.445) );
+    border-radius: 100px;
     margin-top: -25%;
+    border: 1px solid red;
    
 }
+
 
 .Sobre .icon2 {
 
@@ -188,7 +207,7 @@ p{
 
 .Sobre .icon2 img {
     height: 30vh;
-    width: 20vw;
+    width: 10vw;
     object-position: top;
     object-fit: cover;
     float: left;
@@ -197,6 +216,7 @@ p{
     background:linear-gradient(to bottom left ,  transparent 50%,rgba(255, 0, 0, 0.445) );
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
     overflow: hidden;
 
 }
@@ -400,7 +420,8 @@ p{
             color: #333;
         }
         .Ap .icon2 {
-            flex-basis: auto;
+            margin-top: -25%;
+      
          
         }
         .Ap .icon2 img{
@@ -409,13 +430,12 @@ p{
             float: right;
             margin: 0 auto;
             display: block;
-            height: 10vh;
+            height: auto;
             width: 20vw;
-
-        
+            image-rendering: auto;
+            border-radius: 50px;
             margin: 0 10PX 10pX 0;
-            margin-top: -65%;
-      
+     
     
         }
         .icon1 a{
@@ -480,6 +500,14 @@ p{
             gap: 2px;
             flex-direction: column;
         }
-
+        .projeto {
+            background-color: rgba(0, 0, 0, 0.2);
+            color:  black;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+           
         
+    }
+    .projeto p{
+        color:rgb(110, 110, 110);
+    }
 }
