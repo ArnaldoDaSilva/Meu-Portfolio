@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* Container dos Projetos */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilizando cada Projeto */
+.projeto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do Projeto */
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Links para GitHub e Live Demo */
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.links a i {
+    margin-right: 5px;
+}
+
+/* Estilo para botões */
+.links a:first-child {
+    background-color: #333; /* GitHub */
+}
+
+.links a:last-child {
+    background-color: rgb(31,71,121); /* Live Demo */
+}
+
+.links a:hover {
+    opacity: 0.8;
+}
+
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Outras variáveis de cor */
+  }
+  
+  .dark-mode {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    /* Outras variáveis de cor para o modo escuro */
+  }
+  
