@@ -11,30 +11,53 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: rgb(9, 24, 54);
+    background-color: #181927;
+    /* background-image: url(/logo/v1016-b-09.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     color: rgb(255, 255, 255);
     text-decoration: none;
+     animation: fadeIn 2s ease-in-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        	background:
+		  radial-gradient(circle farthest-side at 0% 50%,#181927 23.5%,#0000 0)21.0px 30px,
+		  radial-gradient(circle farthest-side at 0% 50%,#1E4538 24%,#0000 0)19.0px 30px,
+		  linear-gradient(#181927 14%,#0000 0, #0000 85%,#181927 0)0 0,
+		  linear-gradient(150deg,#181927 24%,#1E4538 0,#1E4538 26%,#0000 0,#0000 74%,#1E4538 0,#1E4538 76%,#181927 0)0 0,
+		  linear-gradient(30deg,#181927 24%,#1E4538 0,#1E4538 26%,#0000 0,#0000 74%,#1E4538 0,#1E4538 76%,#181927 0)0 0,
+		  linear-gradient(90deg,#1E4538 2%,#181927 0,#181927 98%,#1E4538 0%)0 0 #181927;
+	background-size: 40px 60px;
+	background-color: #181927;
+
+}
+.icon1 a:hover {
+    color: rgb(255, 0, 0);
 
 }
 
 .navbar {
-    background:linear-gradient(to right, rgb(29, 31, 52) 50%,rgba(255, 0, 0, 0.565) 100%);
+    background:linear-gradient(to right, rgba(29, 31, 52,0.8) 50%,rgba(255, 0, 0, 0.565) 300%);
     padding: 10px 0;
-    width: 80vw;
-    margin-left: 10%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    z-index: 1;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1000;
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: RIGHT;
     justify-content: center;
 }
 
@@ -43,21 +66,59 @@ body {
 }
 
 .nav-links a {
+
+    display:flex;
     text-decoration: none;
     color: rgb(255, 0, 0);
     font-size: 14px;
-    padding: 8px 20px;
-
+    justify-content: center;
+    align-items: center;
 
 }
 
 .nav-links a:hover {
-    border: 1px solid #ff0000 ;
+   
     border-radius: 10px;
     background-color: transparent;
+    color: rgb(255, 255,255);
     text-shadow:  0 2px 8px rgba(255, 255, 255, 0.514);
+    transform: translatey(-5px);
+    transition: 0.5s ease-in-out;
+}
+.nav-links li:hover {
+   
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    transform: translatey(5px);
+    transition: 0.5s ease-in-out;
 }
 
+@keyframes entrada{
+    from {
+        filter: blur(2px);
+        
+        opacity: 0;
+        transform: translateX(-200px) translateY(-50px  );
+    }
+    to {
+               filter: blur(0);
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateZ(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 .campo {
     overflow: visible;
     margin: 10px;
@@ -66,27 +127,79 @@ body {
     width: 80%;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    
+    box-shadow: 0 2px 8px #1E4538;
+     background: rgba(29, 31, 52,0.4);
    
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-    background:linear-gradient(to right, rgb(29, 31, 52) 60%,rgba(255, 0, 0, 0.18) 100%);
+}
+.campo:nth-child(3){
+      animation: entrada 3.2s ease-in-out;
+}
+.campo:nth-child(5){
+      animation: entrada 3.4s ease-in-out;
+}
+.campo:nth-child(4){
+      animation: entrada 3.4s ease-in-out;
+}
+.skills{
+      animation: entrada 3.6s ease-in-out;
+}
+.campo{
+      animation: entrada 3.8 ease-in-out;
+}
+.Ap{
+    animation: entrada 3s ease-in-out;
+
+}
+div{
+    animation: entrada 3.0s ease-in-out;
+    
+}
+
+.Ap:hover{
+    box-shadow: 0 0px 10px rgba(255, 0, 0, 0.2);
+    
+}
+.campo:hover{
+        box-shadow: 0 0px 10px rgba(255, 0, 0, 0.2);
+        z-index: 1;
 }
 .Ap{
     overflow: hidden;
     margin: 10px;
+    margin-top: 20vh;
     margin-left: 10%;
     height: fit-content;
     width: 80%;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 2px 8px #1E4538;
     padding: 20px;
-    background: rgb(29, 31, 52);
-    
-}  
+    background: rgba(29, 31, 52,0.4);
+    gap: 10px;
 
+}
+.Ap h4 {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:-70px;
+    
+}
+.Ap p{
+    width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+a:hover{
+    transition-delay: 20s;
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
 i{
     color:  rgb(255, 0, 0);
-   
+
 }
 
 p{
@@ -111,27 +224,34 @@ p{
 }
 
 .Ap button {
-    margin: 20px;
+    margin: 60px 0px 20px 0px;
     height: 40px;
     border-radius: 10px;
     color: darkgray;
-    
+
     padding:  10px;
     border: 1px solid rgb(255, 0, 0);
     background:linear-gradient(to right, rgb(15, 16, 27) ,rgb(255, 0, 0));
 
 
 }
-
+p span{
+    cursor: default;
+    transition: color 0.5s ease-in-out;
+}
+p span:hover{
+    color: rgb(255, 0, 0);
+}
 .Ap button:hover {
-
-    transition: 0.1s ease-in-out;
+    transform: translateY(-5px );
+    transition: 1.5s ease-in-out;
     background-color: rgb(20, 10, 10);
     color: #ffffff;
 }
 .Ap  h1 {
     display: flex;
     justify-content: left;
+    
 }
 .campo h1 {
     display: flex;
@@ -142,41 +262,65 @@ p{
 
     color: rgb(255, 255, 255);
     text-decoration: none;
-    
+
 
 }
+.carousel{
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 10%;
+    height: fit-content;
+    width: 70%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+    padding: 20px;
 
+
+}
+.carousel img{
+    width: 100vw;
+    height: 40vh;
+    border-radius: 10px;
+    object-fit: fill;
+    margin-bottom: 20px;
+    object-position: center;
+}
 .campo:hover {
     transform: scaley(1.010);
     transition: 0.5s ease-in-out;
 
 }
 
- .imga {
+.Ap #card {
+    /* background-color:rgb(8, 15, 28); */
+    display: flex;
+    justify-self: right ;
+    margin: -25vh 5vw -100px 0px;
     height: 30vh;
-    width: 10vw;
-    object-position: right;
-    object-fit: fill;
-    float: right;
-    margin: 0 20dvh 10px 0;
-    mix-blend-mode: normal;
-
+    width: 20vw;
     border-radius: 50%;
-    top: -10%;
- 
+    /* border: 2px solid rgb(90,90,90); */
+    box-shadow: 50px -50px 10px rgb(152, 31, 33);
 
-    /* object-fit: fill;
-    width: 5vw;
-    height: 10vh;
-    border-radius: 10px;
-    margin-left: 30px;
-    gap: 10px; */
 }
+.card img {
+    width: 100%;
+    height: 100%;
 
+    object-fit: fill;    
+    object-position: center;
+
+    
+    z-index: 1;
+}
+.card:hover{
+       animation: shift 4s ease-in-out infinite alternate;
+}
  .icon2 img{
     width: auto;
-    height: fit-content; 
-
+    height: fit-content;
+    
 
 }
 
@@ -193,16 +337,20 @@ p{
     border-radius: 100px;
     margin-top: -25%;
     border: 1px solid red;
-   
-}
 
+}
+.Sobre p{
+    color: white;
+    
+
+}
 
 .Sobre .icon2 {
 
     width: fit-content;
     height: auto;
 
-  
+
 }
 
 .Sobre .icon2 img {
@@ -228,13 +376,14 @@ p{
     border-radius: 10px;
     margin-left: 30px;
     gap: 10px;
-    
+
 }
 .skills img:hover{
         border: 1px solid rgb(31, 71, 121);
         border-radius: 10px;
         transform: translateY(-5px);
         transition: 0.5s ease-in-out;
+        background-color: #ffffff;
 
 
 }
@@ -307,7 +456,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-   
+
 }
 
 /* Estilizando cada Projeto */
@@ -362,37 +511,37 @@ p{
 
 .links a:hover {
     opacity: 0.8;
- 
+
 }
 
-    
 
-@media  (min-width:370px) and (max-width: 900px) {
+
+@media  (min-width:0px) and (max-width: 900px) {
         body{
-            background-color: #ffffff;
+            background-color: rgb(90, 90, 90);
             color: darkgray;
             display: flex;
 
-            
-      
+
+
         }
-  
+
         .projetos-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-         
+
         }
-  
-        
+
+
         .navbar{
             background: white;
             width: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
-            
+
             padding: 10px 10px;
         }
         .campo{
@@ -415,18 +564,18 @@ p{
         .Ap{
             background: white;
         }
-        
+
         .Ap h1{
             color: #333;
         }
         .Ap .icon2 {
             margin-top: -25%;
-      
-         
+
+
         }
         .Ap .icon2 img{
             background:linear-gradient(to bottom right , transparent 30%,rgba(255, 0, 0, 0.445) );
-     
+
             float: right;
             margin: 0 auto;
             display: block;
@@ -435,9 +584,23 @@ p{
             image-rendering: auto;
             border-radius: 50px;
             margin: 0 10PX 10pX 0;
-     
-    
+
+
         }
+        .carousel{
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 10%;
+    height: 10vh;
+    width: 80%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+    padding: 20px;
+    object-fit: fill;
+
+}
+
         .icon1 a{
             color: #333;
         }
@@ -447,29 +610,29 @@ p{
         p{
             color: rgb(81, 81, 81);
         }
-     
+
         .nav-links {
             list-style: none;
             display: flex;
             justify-content: center;
-            
+
         }
-        
+
         .nav-links li {
             margin: 10px;
         }
-        
+
         .nav-links a  {
             text-decoration: none;
             color: rgb(255, 0, 0);
             font-size: 14px;
             padding: 6px 20px;
             font-style: italic;
-            
-        
+
+
         }
-  
-        
+
+
         .nav-links a:hover {
             border: none ;
             border-radius: 10px;
@@ -484,7 +647,7 @@ p{
             width: 20vw;
             background:linear-gradient(to bottom left ,  rgb(255, 255, 255) 50%,rgba(255, 0, 0, 0.445) );
         }
-        
+
         .skills img{
          aspect-ratio: 1/1;
             height: auto;
@@ -504,10 +667,32 @@ p{
             background-color: rgba(0, 0, 0, 0.2);
             color:  black;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-           
-        
+
+
     }
     .projeto p{
         color:rgb(110, 110, 110);
     }
+    .Ap #imga {
+    background-color:rgb(8, 15, 28);
+    display: flex;
+    justify-self: right ;
+    margin: -20vh 10vw -100px 0px;
+    height: 30vh;
+    width: 20vw;
+    border-radius: 50%;
+    border: 2px solid rgb(90,90,90);
+    box-shadow: 50px -50px 0px rgb(152, 31, 33);
+
+}
+.imga img {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 50%;
+    object-fit: fill;    
+    object-position: center;
+    box-shadow: 0px 50px 0px rgb(152, 31, 33);
+    border: 2px solid #070628;
+
+}
 }

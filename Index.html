@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Configuracoes/animate.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        /* background-color: #110e0e; */
+        background-color: #181927;
+        color: #333;
+        text-align: center;
+          cursor: crosshair;
+    }
+ 
+
+    .Principal {
+        margin-top: 30vh;
+        animation: fadeIn 2s ease-in-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+      
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #ffffff;
+        animation: fadeIn 2.4s ease-in-out;
+        /* Copy code to element you want to animate */
+    animation: Movimento 2s cubic-bezier(0.37, 0, 0.63, 1) 4s infinite normal both;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #fffcfc;
+        animation: fadeIn 2.6s ease-in-out;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        color: #ffffff;
+        animation: fadeIn 2.8s ease-in-out;
+    }
+
+    a {
+        text-decoration: none;
+        height: 400px;
+        font-size: 40px;
+        color: #ffffff;
+        animation: fadeIn 3.0s ease-in-out;
+    }
+
+
+.glitch {
+   position: relative;
+   font-size: 30px;
+   font-weight: bold;
+   color: #FFFFFF;
+   letter-spacing: 3px;
+   animation: shift 4s ease-in-out infinite alternate;
+   transform: skewX(0deg);
+   z-index: 1;
+}
+.glitch1 {
+   position: relative;
+   font-size: 30px;
+   font-weight: bold;
+   color: #FFFFFF;
+   letter-spacing: 3px;
+   z-index: 1;
+}
+
+.glitch1:before {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: -2px;
+   width: 100%;
+   color: 30px;
+   background-color: #000000;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-before 3s infinite linear alternate-reverse;
+}
+
+.glitch1:after {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 2px;
+   width: 100%;
+   color: 30px;
+   background-color: #000000;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-after 2s infinite linear alternate-reverse;
+}
+
+
+</style>
+
+<body>
+    <!-- <div class="sobre" style="height: 40px; width: 40px; background-color: white; z-index: 1;"></div> -->
+     <div class="custom-loader"></div>
+    <div class="Principal">
+        <H1>WELCOME TO MY PORTIFOLIO</H1>
+        <h2 class="glitch1">ARNALDO AUGUSTO DA SILVA</h2>
+        <h4 class="glitch" data-text="Desenvolvedor de Software" >Desenvolvedor De Software</h4>
+        
+        <a href="#" >
+            <i class="fas fa-headphones-alt"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/arnaldo-silva-869941316/ "><i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ArnaldoDaSilva">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="#">
+            <i class="far fa-moon"></i>
+        </a>
+    </div>
+</body>
+<script>
+    //  setTimeout(() => {
+    //      window.location.href = "indexa.html";
+    // }, 5000); // Red
+    // // ireciona após 5 segundos
+  document.addEventListener('mousemove',function(e){
+    const sobre = document.createElement('Prncipal');
+    sobre.className='particula';
+    sobre.style.left = e.pageX + 'px';
+    sobre.style.top = e.pageY + 'px';
+    document.body.appendChild(sobre);
+    setTimeout(() => {
+        sobre.remove();
+    }, 1000); // Remove a partícula após 1 segundo
+  })
+</script>
+
+</html>
