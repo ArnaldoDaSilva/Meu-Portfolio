@@ -826,8 +826,7 @@ p span:hover{
 
 .Ap #card {
     /* background-color:rgb(8, 15, 28); */
-    display: flex;
-    justify-self: right ;
+
     margin: -35vh 0vw -100px 0px;
     height: 20vh;
     width: 20vw;
