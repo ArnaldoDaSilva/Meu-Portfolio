@@ -579,9 +579,8 @@ body {
     
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 .nav-links {
      margin-top: -10px;
@@ -720,9 +719,9 @@ div{
     
 }
 .Ap p{
-    width: 60%;
+    width: 40%;
     margin-bottom: 20px;
-    display: flex;
+   
     
 }
 a:hover{
@@ -829,8 +828,8 @@ p span:hover{
     /* background-color:rgb(8, 15, 28); */
     display: flex;
     justify-self: right ;
-    margin: -25vh 5vw -100px 0px;
-    height: 30vh;
+    margin: -35vh 0vw -100px 0px;
+    height: 20vh;
     width: 20vw;
     border-radius: 50%;
     /* border: 2px solid rgb(90,90,90); */
@@ -840,11 +839,8 @@ p span:hover{
 .card img {
     width: 100%;
     height: 100%;
-
     object-fit: fill;    
     object-position: center;
-
-    
     z-index: 1;
 }
 .card:hover{
