@@ -719,8 +719,12 @@ div{
     
 }
 .Ap p{
+    text-align:left;
     width: 40%;
+    color:smoke;	
     margin-bottom: 20px;
+	font-size:12px;	
+	
    
     
 }
@@ -827,7 +831,7 @@ p span:hover{
 .Ap #card {
     /* background-color:rgb(8, 15, 28); */
 
-    margin: -35vh 0vw -100px 0px;
+    margin: -35vh 0vw 0px 0px;
     height: 20vh;
     width: 20vw;
     border-radius: 50%;
