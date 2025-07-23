@@ -905,8 +905,8 @@ p span:hover{
 .skills img{
 
     object-fit: fill;
-    width: 5vw;
-    height: 5vh;
+    width: 10vw;
+    height: 10vh;
     border-radius: 10px;
     margin-left: 30px;
     gap: 10px;
