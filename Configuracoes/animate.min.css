@@ -359,3 +359,28 @@ a {
   font-weight: bold;
   margin-top: 2rem;
 }
+@keyframes moverFundo {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 1000px 1000px;
+      }
+    }
+    .particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      pointer-events: painted;
+      opacity: 0.8;
+      animation: explode 1s forwards;
+    }
+
+    @keyframes explode {
+      to {
+        transform: translateY(-70px) scale(0);
+        opacity: 0;
+      }
+    }
