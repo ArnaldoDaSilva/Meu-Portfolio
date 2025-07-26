@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Configuracoes\Estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="Configuracoes/animate.min.css">
+    <link rel="stylesheet" href="Configuracoes/efeitos.css">
     <title>Portfolio</title>
 
 </head>
@@ -72,18 +73,7 @@
     <!-- campo 1
 
       -->
-    <div class="campo">
-        <div class="Sobre" id="Sobre">
-            <h1>Status Integrado</h1>
-            <p></p>
 
-            <p>Nome: <i>Arnaldo Augusto Da Silva</i></p <p>Perfil: <i>Individual</i></p>
-            <p>Estado: <i style="color: green;">Open To Work</i></p>
-            <p>Formacao : <i>Licenciatura em Desenvolvimento de Software</i></p>
-            <p>idade: <i>21 anos</i></p>
-
-        </div>
-    </div>
     <!-- campo 2    -->
     <div class="campo">
         <div class="skills" id="skills">
@@ -133,13 +123,34 @@
         </div>
     </div>
     <div class="campo">
+        <div class="Sobre" id="Sobre">
+            <h1>Status Integrado</h1>
+            <p></p>
+
+            <p>Nome: <i>Arnaldo Augusto Da Silva</i></p><br>
+            <p>Perfil: <i>Individual</i></p><br>
+            <p>Estado: <i style="color: green;">Open To Work</i></p><br>
+            <p>Formacao : <i>Licenciatura em Desenvolvimento de Software</i></p><br>
+            <p>idade: <i>21 anos</i></p>
+
+        </div>
+    </div>
+    <div class="campo">
         <div class="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <h2>🖥️ Meus Projetos</h2>
             <div class="projetos-container">
                 <!-- Projeto 1 -->
                 <div class="projeto">
-                    <img src="Imagens\html.jpg" alt="Projeto 1">
+                    <div class="carrossel-container">
+                        <div class="carrossel-slide">
+                            <img src="Imagens\projectos\login.png" alt="Slide 1">
+                            <img src="Imagens\projectos\1\inicio.png" alt="Slide 2">
+                            <img src="Imagens\projectos\1\Funcionario.png" alt="Slide 3">
+                        </div>
+                        <button class="btn prev" onclick="mudarSlide(-1)">❮</button>
+                        <button class="btn next" onclick="mudarSlide(1)">❯</button>
+                    </div>
                     <h3>Sistema Bancario</h3>
                     <p>Sistema de gerenciamento bancario ,usando linguagens de programacao como html, css</p>
                     <div class="links">
@@ -153,7 +164,15 @@
                 </div>
                 <!-- Projeto 2 -->
                 <div class="projeto">
-                    <img src="Imagens\html.jpg" alt="Projeto 2">
+                    <div class="carrossel-container">
+                        <div class="carrossel-slide">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 1">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 2">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 3">
+                        </div>
+                        <button class="btn prev" onclick="mudarSlide(-1)">❮</button>
+                        <button class="btn next" onclick="mudarSlide(1)">❯</button>
+                    </div>
                     <h3>Sistema Eleitoral </h3>
                     <p>Sistema de gerenciamento bancario ,usando linguagens de programacao como html, css</p>
                     <div class="links">
@@ -166,7 +185,15 @@
                     </div>
                 </div>
                 <div class="projeto">
-                    <img src="Imagens\html.jpg" alt="Projeto 3">
+                    <div class="carrossel-container">
+                        <div class="carrossel-slide">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 1">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 2">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 3">
+                        </div>
+                        <button class="btn prev" onclick="mudarSlide(-1)">❮</button>
+                        <button class="btn next" onclick="mudarSlide(1)">❯</button>
+                    </div>
                     <h3>2d arcade </h3>
                     <p>Sistema de gerenciamento bancario ,usando linguagens de programacao como html, css</p>
                     <div class="links">
@@ -179,7 +206,15 @@
                     </div>
                 </div>
                 <div class="projeto">
-                    <img src="Imagens\html.jpg" alt="Projeto 4">
+                    <div class="carrossel-container">
+                        <div class="carrossel-slide">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 1">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 2">
+                            <img src="logo\v1016-b-09.jpg" alt="Slide 3">
+                        </div>
+                        <button class="btn prev" onclick="mudarSlide(-1)">❮</button>
+                        <button class="btn next" onclick="mudarSlide(1)">❯</button>
+                    </div>
                     <h3>Nome do Projeto 4</h3>
                     <p>Sistema de gerenciamento bancario ,usando linguagens de programacao como html, css</p>
                     <div class="links">
@@ -191,9 +226,12 @@
                         </a>
                     </div>
                 </div>
-                <button onclick="myFunction()">ver tudo<i class="fas fa-arrow-right"></i>
-                </button>
+                <button onclick="myFunction()">ver tudo <i class="fas fa-desktop"></i> </button>
+
+
             </div>
+
+
         </div>
     </div>
     <script>

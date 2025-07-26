@@ -343,6 +343,7 @@
   animation: spin 2.5s linear infinite;
 }
 
+
 @keyframes spin {
   0% {
     --rotate: 0deg;
@@ -384,3 +385,30 @@ a {
         opacity: 0;
       }
     }
+    @keyframes entrada{
+    from {
+        filter: blur(2px);
+        
+        opacity: 0;
+        transform: translateX(-200px) translateY(-50px  );
+    }
+    to {
+               filter: blur(0);
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateZ(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    
