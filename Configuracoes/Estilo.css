@@ -32,6 +32,7 @@ body {
 	background-color: #181927;
         animation: moverFundo 30s alternate infinite;
 
+
 }
 .icon1 a:hover {
     color: rgb(255, 0, 0);
@@ -76,6 +77,8 @@ body {
     font-size: 14px;
     justify-content: center;
     align-items: center;
+    animation: descendo 2s ease 0s 1 normal forwards;
+    transition-delay: 3s;
 
 }
 
@@ -87,6 +90,7 @@ body {
     text-shadow:  0 2px 8px rgba(255, 255, 255, 0.514);
     transform: translatey(-5px);
     transition: 0.5s ease-in-out;
+    
 }
 .nav-links li:hover {
    
@@ -510,7 +514,7 @@ p span:hover{
 
 
 @media  (min-width:0px) and (max-width: 900px) {
-  * {
+ * {
     margin: 0;
 
     box-sizing: border-box;
@@ -544,6 +548,7 @@ body {
 	background-color: #181927;
         animation: moverFundo 30s alternate infinite;
 
+
 }
 .icon1 a:hover {
     color: rgb(255, 0, 0);
@@ -561,8 +566,8 @@ body {
     
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .nav-links {
@@ -588,6 +593,8 @@ body {
     font-size: 14px;
     justify-content: center;
     align-items: center;
+    animation: descendo 2s ease 0s 1 normal forwards;
+    transition-delay: 3s;
 
 }
 
@@ -599,6 +606,7 @@ body {
     text-shadow:  0 2px 8px rgba(255, 255, 255, 0.514);
     transform: translatey(-5px);
     transition: 0.5s ease-in-out;
+    
 }
 .nav-links li:hover {
    
@@ -609,42 +617,18 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-@keyframes entrada{
-    from {
-        filter: blur(2px);
-        
-        opacity: 0;
-        transform: translateX(-200px) translateY(-50px  );
-    }
-    to {
-               filter: blur(0);
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateZ(20px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 .campo {
     overflow: visible;
-    margin: 10px;
-    margin-left: 10%;
+    margin: 0px;
+    margin-left: 0%;
     height: fit-content;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     
-    box-shadow: 0 2px 8px #1E4538;
-     background: rgba(29, 31, 52,0.4);
+    /* box-shadow: 0 2px 8px #1E4538; */
+     /* background: rgba(29, 31, 52,0.4); */
    
 }
 .campo:nth-child(3){
@@ -675,10 +659,7 @@ div{
     box-shadow: 0 0px 10px rgba(255, 0, 0, 0.2);
     
 }
-.campo:hover{
-        box-shadow: 0 0px 10px rgba(255, 0, 0, 0.2);
-        z-index: 1;
-}
+
 .Ap{
     overflow: hidden;
     margin: 10px;
@@ -702,25 +683,11 @@ div{
     
 }
 .Ap p{
-    width: 40%;
+    width: 60%;
     margin-bottom: 20px;
-
+    display: flex;
     
 }
-a:hover{
-    transition-delay: 20s;
-    transform: translateY(-5px);
-    transition: 0.5s ease-in-out;
-}
-i{
-    color:  rgb(255, 0, 0);
-
-}
-
-p{
-    color: darkgray;
-}
-
 .Ap pre{
     color:  rgb(255, 0, 0);
     font-size: 24px;
@@ -729,15 +696,6 @@ p{
     justify-content: left;
 
 }
-.campo {
-    font-family: sans-serif;
-
-    justify-content: center;
-    padding: 14px 12px;
-    list-style: none;
-
-}
-
 .Ap button {
     margin: 60px 0px 20px 0px;
     height: 40px;
@@ -750,13 +708,6 @@ p{
 
 
 }
-p span{
-    cursor: default;
-    transition: color 0.5s ease-in-out;
-}
-p span:hover{
-    color: rgb(255, 0, 0);
-}
 .Ap button:hover {
     transform: translateY(-5px );
     transition: 1.5s ease-in-out;
@@ -766,8 +717,46 @@ p span:hover{
 .Ap  h1 {
     display: flex;
     justify-content: left;
+        margin-bottom: 80px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     
 }
+a:hover{
+    transition-delay: 20s;
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+    
+}
+i{
+    color:  rgb(255, 0, 0);
+
+}
+
+p{
+    color: darkgray;
+}
+
+
+.campo {
+    font-family: sans-serif;
+
+    justify-content: center;
+    padding: 14px 12px;
+    list-style: none;
+
+}
+
+
+p span{
+    cursor: default;
+    transition: color 0.5s ease-in-out;
+}
+p span:hover{
+    color: rgb(255, 0, 0);
+}
+
 .campo h1 {
     display: flex;
     justify-content: left;
@@ -780,39 +769,19 @@ p span:hover{
 
 
 }
-.carousel{
-    overflow: hidden;
-    margin: 10px;
-    margin-left: 10%;
-    height: fit-content;
-    width: 70%;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
-    padding: 20px;
+
+.Ap a{
+    margin-top: -20px;
+}
 
 
-}
-.carousel img{
-    width: 100vw;
-    height: 40vh;
-    border-radius: 10px;
-    object-fit: fill;
-    margin-bottom: 20px;
-    object-position: center;
-}
-.campo:hover {
-    transform: scaley(1.010);
-    transition: 0.5s ease-in-out;
-
-}
 
 .Ap #card {
     /* background-color:rgb(8, 15, 28); */
     display: flex;
     justify-self: right ;
-    margin: -35vh 0px -100px 0px;
-    height: 20vh;
+    margin: -25vh 5vw -100px 0px;
+    height: 30vh;
     width: 20vw;
     border-radius: 50%;
     /* border: 2px solid rgb(90,90,90); */
@@ -839,21 +808,7 @@ p span:hover{
 
 }
 
-.Ap .icon2 img {
-    height:  30dvh;
-    width: 10vw;
-    aspect-ratio: 39/29;
-    object-position: center;
-    object-fit: fill;
-    float: right;
-    margin: 0 10px 10px 0;
-    mix-blend-mode: normal;
-    background:linear-gradient(to bottom right ,  transparent 45%,rgba(255, 0, 0, 0.445) );
-    border-radius: 100px;
-    margin-top: -25%;
-    border: 1px solid red;
 
-}
 .Sobre p{
     color: white;
     
@@ -883,13 +838,14 @@ p span:hover{
     overflow: hidden;
 
 }
+
 .skills img{
 
     object-fit: fill;
     width: 5vw;
     height: 10vh;
     border-radius: 10px;
-    margin-left: 30px;
+    margin: 30px;
     gap: 10px;
 
 }
@@ -897,50 +853,66 @@ p span:hover{
         border: 1px solid rgb(31, 71, 121);
         border-radius: 10px;
         transform: translateY(-5px);
-        transition: 0.5s ease-in-out;
-        background-color: #ffffff;
-
+        transition: 0.1s ease-in-out;
+        background-color: #181927 ;
+        animation: shift 4s ease-in-out infinite alternate;
 
 }
 
 
 .skills h1{
     display: flex;
-    justify-content: left;
-    margin-bottom: 20px;
-
-    text-align: left;
-
+    justify-content: center;
+    margin: 40px;
+    font-size: 60px;
+    
 
 }
 
 .contacto h1 {
     display: flex;
     justify-content: left;
-    margin-top: 20px;
-
-    text-align: left;
+    margin: 40px;
+    font-size: 40px;
 }
+
 .contacto a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: flex;
     justify-content: center;
+    margin-top: -2px;
+    margin-left: 20px;
+    word-spacing: normal;
 }
 
-.Ap h1 {
-    margin-bottom: 80px;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.campo .Sobre{
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    margin-top: -57vh;
+    
 }
-.Ap a{
-    margin-top: -20px;
+.Sobre h1 {
+ margin: 20px;
+ justify-content: center;
+}
+.Sobre p{
+    margin-left: 20px;
 }
 
-.Sobre{
-    font-family: 'Segoe UI';
-    text-align: justify;
+
+
+.contacto , .Sobre{
+    height: 50vh;
+    border: 2px solid #1E4538;
+    border-radius: 20px;
+    margin: 20px;
+    width:45%;
+
 }
+
+
 .portfolio a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -950,17 +922,29 @@ p span:hover{
 
     border-radius: 10px;
     padding: 10px;
-    margin-left: 70vw;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgb(255, 0, 0);
-    background:linear-gradient(to right, rgb(15, 16, 27) ,rgb(255, 0, 0));
+    margin-left: 68vw;
+    z-index: 1;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+   background-color: unset;;
     color: white;
 }
-
+.portfolio button:hover{
+    transform: scaley(1.4);
+    transition:  0.5s ease-in-out;
+    
+}
+.portfolio h1{
+    justify-content: left;
+    font-size: 40px;
+    margin: 20px;
+}
 .portfolio h2{
     display: flex;
     justify-content: center;
     margin-bottom: 10vh;
+    
 }
 
 
@@ -980,7 +964,10 @@ p span:hover{
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(10, 11, 23, 0.2);
     text-align: center;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+    cursor: grab;
+    forced-color-adjust: auto;
 }
 
 .projeto {
@@ -998,11 +985,15 @@ p span:hover{
 }
 
 /* Imagem do Projeto */
-.projeto img {
-    width: 100%;
+/* .projeto img {
+    width: 117%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height: auto;
-    border-radius: 8px;
-}
+    margin-left: -29px;
+    margin-top: -9%;
+    
+} */
 
 /* Links para GitHub e Live Demo */
 .links {
@@ -1036,7 +1027,4 @@ p span:hover{
     opacity: 0.8;
 
 }
-
-  
-
 }
