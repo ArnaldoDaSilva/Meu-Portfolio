@@ -44,4 +44,24 @@
 .next {
   right: 10px;
 }
+  .box {
+    
+  
 
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+      opacity: 0;
+      transition: all 1.8s ease;
+    }
+
+    /* Efeitos */
+    .fade-up { transform: translateY(60px); }
+    .fade-left { transform: translateX(-60px); }
+    .fade-right { transform: translateX(60px); }
+    .zoom-in { transform: scale(0.8); }
+
+    /* Ativo */
+    .active {
+      opacity: 1 !important;
+      transform: translateX(0) translateY(0) scale(1) !important;
+    }

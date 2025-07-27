@@ -25,12 +25,10 @@
             </li>
             <!-- <li> <button id="change" class="fas fa-moon" style="border: none; height: 20px; background-color: transparent ;"></button></li> -->
         </ul>
-
     </nav>
     <!-- campos de Apresentacao  -->
     <!-- <div class="campo"> -->
-    <div class="Ap" id="Ap">
-
+    <div class="Ap box fade-in" id="Ap">
         <pre>Arnaldo Augusto Da Silva </pre>
         <p></p>
         <h1>Desenvolvedor De Software </i></h1>
@@ -46,13 +44,9 @@
             <img src="Imagens\images.jpg" alt="">
         </div>
         <!-- <div class="imga" id="imga">
-        
         </div> -->
         <Button onclick="window.location.href='tel:+258860162805'">Contacte me </Button>
-
-
         <div class="icon1">
-
             <a href="https://www.linkedin.com/in/arnaldo-silva-869941316/ "><i class="fab fa-linkedin"></i>
                 Linkedin
             </a>
@@ -60,31 +54,22 @@
                 <i class="fab fa-github"></i>
                 Github
             </a>
-
         </div>
-
-
         <p><i class="fab fa-dev"></i></p>
-
-
     </div>
 
     <!-- </div> -->
-    <!-- campo 1
-
-      -->
-
+    <!-- campo 1    -->
     <!-- campo 2    -->
     <div class="campo">
-        <div class="skills" id="skills">
+        <div class="skills box fade-right" id="skills">
             <h1>Skills</h1>
             <p></p>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
                 title="HTML é uma linguagem de marcação usada para criar páginas web">
 
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
-                title="CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML"
-                aria-placeholder="#####">
+                title="CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML">
 
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
                 title="JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web">
@@ -113,7 +98,7 @@
     </div>
 
     <div class="campo">
-        <div class="contacto" id="contacto">
+        <div class="contacto box zoom-in" id="contacto">
             <h1>Contactos</h1>
             <p></p>
             <a href="mailto:as3904844@gmail.com"><i class="fas fa-envelope"></i> Enviar um E-mail</a><br>
@@ -123,7 +108,7 @@
         </div>
     </div>
     <div class="campo">
-        <div class="Sobre" id="Sobre">
+        <div class="Sobre box zoom-in" id="Sobre">
             <h1>Status Integrado</h1>
             <p></p>
 
@@ -135,13 +120,13 @@
 
         </div>
     </div>
-    <div class="campo">
+    <div class="campo ">
         <div class="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <h2>🖥️ Meus Projetos</h2>
             <div class="projetos-container">
                 <!-- Projeto 1 -->
-                <div class="projeto">
+                <div class="projeto box fade-right">
                     <div class="carrossel-container">
                         <div class="carrossel-slide">
                             <img src="Imagens\projectos\login.png" alt="Slide 1">
@@ -163,7 +148,7 @@
                     </div>
                 </div>
                 <!-- Projeto 2 -->
-                <div class="projeto">
+                <div class="projeto box fade-left">
                     <div class="carrossel-container">
                         <div class="carrossel-slide">
                             <img src="logo\v1016-b-09.jpg" alt="Slide 1">
@@ -184,7 +169,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="projeto">
+                <div class="projeto box fade-up">
                     <div class="carrossel-container">
                         <div class="carrossel-slide">
                             <img src="logo\v1016-b-09.jpg" alt="Slide 1">
@@ -205,7 +190,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="projeto">
+                <div class="projeto box fade-up">
                     <div class="carrossel-container">
                         <div class="carrossel-slide">
                             <img src="logo\v1016-b-09.jpg" alt="Slide 1">
@@ -234,91 +219,13 @@
 
         </div>
     </div>
-    <script>
-        var myCarousel = document.querySelector('carousel')
-        var carousel = new bootstrap.Carousel(carousel)
-        // Função para rolar suavemente para uma div
-        function smoothScroll(target) {
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-            const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition;
-            const duration = 1500; // 1.5 segundos
-            let startTime = null;
+  
+        <div class="footer box fade-up">
+            <p>© 2025 Arnaldo Augusto Da Silva. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Arnaldo Augusto Da Silva</p>
+        </div>
 
-            // Função de animação
-            function animation(currentTime) {
-                if (startTime === null) startTime = currentTime;
-                const timeElapsed = currentTime - startTime;
-                const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
-                window.scrollTo(0, run);
-                if (timeElapsed < duration) requestAnimationFrame(animation);
-            }
-
-            // Função de easing para suavizar o movimento
-            function easeInOutQuad(t, b, c, d) {
-                t /= d / 2;
-                if (t < 1) return (c / 2) * t * t + b;
-                t--;
-                return (-c / 2) * (t * (t - 2) - 1) + b;
-            }
-
-            requestAnimationFrame(animation);
-        }
-        // Seleciona todos os links da navbar
-        const navbarLinks = document.querySelectorAll('.navbar-link');
-        // Adiciona um ouvinte de evento para cada link
-        navbarLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault(); // Impede o comportamento padrão do link
-
-                // Obtém o id da div de destino usando o atributo 'data-target'
-                const targetId = link.getAttribute('data-target');
-
-                // Seleciona a div de destino
-                const targetDiv = document.getElementById(targetId);
-                // Rola a página até a div com transição suave
-                if (targetDiv) {
-                    smoothScroll(targetDiv);
-                }
-            });
-        });
-        function myFunction() {
-            localStorage.setItem("Click", "true");
-            setTimeout(() => {
-                window.location.href = "Configuracoes/portifolio.html";
-                1000
-            });
-        }
-        function mudarCor() {
-            const changeButton = document.getElementById('change');
-            const body = document.body;
-            changeButton.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                if (body.classList.contains('rgb(8, 15, 28)')) {
-                    changeButton.classList.remove('fa-moon');
-                    changeButton.classList.add('fa-sun');
-                } else {
-                    changeButton.classList.remove('fa-sun');
-                    changeButton.classList.add('fa-moon');
-                }
-            });
-        }
-        const frase = document.getElementById('frase');
-        const texto = frase.textContent;
-        frase.InnerHTML = '';
-
-        for (let letra of texto) {
-            const span = document.createElement('span');
-            span.textContent = letra;
-            frase.appendChild(span);
-
-        }
-        function home() {
-            window.location.href = "index.html";
-        }; // Red
-        // ireciona apó
-
-    </script>
+      <script src="Configuracoes/script/elcome.js"></script>  
     <script src="Configuracoes\script\event.js"></script>
 </body>
 

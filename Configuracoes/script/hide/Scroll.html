@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efeitos de Entrada e Saída</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding-bottom: 200px;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+      opacity: 0;
+      transition: all 0.8s ease;
+    }
+
+    /* Efeitos */
+    .fade-up { transform: translateY(60px); }
+    .fade-left { transform: translateX(-60px); }
+    .fade-right { transform: translateX(60px); }
+    .zoom-in { transform: scale(0.8); }
+
+    /* Ativo */
+    .active {
+      opacity: 1 !important;
+      transform: translateX(0) translateY(0) scale(1) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box fade-up">
+    <h2>Fade Up</h2>
+    <p>Este aparece de baixo para cima.</p>
+  </div>
+
+  <div class="box fade-left">
+    <h2>Fade Left</h2>
+    <p>Este desliza da esquerda.</p>
+  </div>
+
+  <div class="box fade-right">
+    <h2>Fade Right</h2>
+    <p>Este vem da direita.</p>
+  </div>
+
+  <div class="box zoom-in">
+    <h2>Zoom In</h2>
+    <p>Este aparece com zoom.</p>
+  </div>
+
+  <script>
+    const elements = document.querySelectorAll('.box');
+
+    function toggleVisibilityOnScroll() {
+      const windowHeight = window.innerHeight;
+
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const bottom = el.getBoundingClientRect().bottom;
+
+        // Elemento visível (pelo menos parcialmente na tela)
+        if (top < windowHeight && bottom > 0) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', toggleVisibilityOnScroll);
+    window.addEventListener('load', toggleVisibilityOnScroll);
+  </script>
+
+</body>
+</html>

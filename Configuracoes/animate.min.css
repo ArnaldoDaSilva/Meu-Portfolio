@@ -277,10 +277,6 @@
   padding: 3px;
   position: relative;
   border-radius: 6px;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex; */
     display: flex;
     justify-self: right ;
     margin: -25vh 5vw -100px 0px;
@@ -317,7 +313,7 @@
   z-index: -1;
   top: -1%;
   left: -2%;
-  animation: spin 2.5s linear infinite;
+
 }
 
 .card::after {

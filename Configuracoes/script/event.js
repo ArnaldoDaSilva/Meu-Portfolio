@@ -29,6 +29,25 @@ function mudarSlide(direcao) {
 // Auto Slide (opcional)
 setInterval(() => mudarSlide(1), 4000);
 
+    const elements = document.querySelectorAll('.box');
 
+    function toggleVisibilityOnScroll() {
+      const windowHeight = window.innerHeight;
+
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const bottom = el.getBoundingClientRect().bottom;
+
+        // Elemento visível (pelo menos parcialmente na tela)
+        if (top < windowHeight && bottom > 0) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', toggleVisibilityOnScroll);
+    window.addEventListener('load', toggleVisibilityOnScroll);
 
   
